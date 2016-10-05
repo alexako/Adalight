@@ -418,7 +418,7 @@ void draw () {
 
 public class DisposeHandler {
   DisposeHandler(PApplet pa) {
-    pa.registerDispose(this);
+    pa.registerMethod("dispose", this);
   }
   public void dispose() {
     // Fill serialData (after header) with 0's, and issue to Arduino...
